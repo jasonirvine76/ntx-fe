@@ -30,7 +30,7 @@ const apolloClient = new ApolloClient({
   cache: new InMemoryCache(),
   headers: {
     "content-type": "application/json",
-    "x-hasura-admin-secret": "jw8y3lwW7Vk4HKuROjlbs3flnrYaDsE1vkqNqhtTgv3rIo8bC655Fx6WmSZk4KvO",
+    "x-hasura-admin-secret": import.meta.env.VITE_HASURA_SECRET,
   },
 });
 
